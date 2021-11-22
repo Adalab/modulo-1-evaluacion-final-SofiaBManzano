@@ -29,7 +29,10 @@
   align-items: center;
   color: var(--white-color);
   &--title {
-    font-style: var(--title-font-family);
+    font-family: var(--title-font-family);
     text-transform: uppercase;
+  }
+  &--content {
+    font-family: var(--primary-font-family);
   }
 }

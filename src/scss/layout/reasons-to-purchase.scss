@@ -1,27 +1,27 @@
 .section2 {
   background-color: #eff9ff;
   height: 624px;
-  width: 100vw;
+
   text-align: center;
-  padding: 30px 15px 60px;
   display: grid;
   grid-template-columns: 1fr;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .titles {
   font-size: 24px;
   text-transform: capitalize;
+  font-family: var(--title-font-family);
 }
 
 .reasons-to-purchase {
+  font-family: var(--title-font-family);
   padding-bottom: 45px;
   padding-right: 70px;
   padding-left: 70px;
 }
 .text {
   font-size: 18px;
+  font-family: var(--primary-font-family);
 }
 .reasons-button {
   width: 184px;
@@ -33,4 +33,5 @@
   border-radius: 22.5px;
   border: solid 2px var(--button-color);
   margin-top: 30px;
+  font-family: var(--primary-font-family);
 }

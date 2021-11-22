@@ -1,7 +1,6 @@
 .section1 {
   text-align: left;
-  padding-left: 15px;
-  padding-right: 15px;
+
   padding-top: 30px;
   padding-bottom: 45px;
   &__title {
@@ -10,16 +9,19 @@
     width: 290px;
     height: 60px;
     line-height: 1.25;
+    font-family: var(--title-font-family);
   }
   &__text {
     font-size: 18px;
     margin-top: 15px;
+    font-family: var(--primary-font-family);
   }
 }
 .small_title {
   color: var(--light-blue);
   text-transform: capitalize;
   font-size: 14px;
+  font-family: var(--primary-font-family);
 }
 .button__go {
   width: 76px;
@@ -33,5 +35,6 @@
   &--text {
     color: var(--button-color);
     font-size: 20px;
+    font-family: var(--primary-font-family);
   }
 }

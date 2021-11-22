@@ -1,0 +1,21 @@
+.scroll-up {
+  position: relative;
+  transform: translate(170px, -25px);
+  background-color: white;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--footer-color);
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
