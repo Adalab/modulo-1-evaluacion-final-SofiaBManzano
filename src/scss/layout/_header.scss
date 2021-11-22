@@ -1,0 +1,26 @@
+.menu {
+  background-color: var(--footer-color);
+  width: 44px;
+  height: 44px;
+}
+.header-image {
+  background-image: url("../images/cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 568px;
+  margin: 0 0 46px;
+  position: relative;
+}
+.article__title {
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  &--title {
+    font-style: var(--title-font-family);
+    text-transform: uppercase;
+  }
+}

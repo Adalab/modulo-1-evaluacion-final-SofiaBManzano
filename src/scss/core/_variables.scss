@@ -1,0 +1,18 @@
+:root {
+  --title-font-family: "Roboto Slab", sans-serif;
+  // --primary-font-family:
+  --button-color: #f26002;
+  --footer-color: #304268;
+  --light-blue: #8ccbea;
+  --white-color: #ffffff;
+}
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
