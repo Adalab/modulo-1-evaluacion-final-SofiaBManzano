@@ -2,6 +2,16 @@
   background-color: var(--footer-color);
   width: 44px;
   height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  &__icon {
+    width: 16px;
+    height: 14px;
+  }
 }
 .header-image {
   background-image: url("../images/cover.jpg");
@@ -9,7 +19,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 568px;
-  margin: 0 0 46px;
   position: relative;
 }
 .article__title {
