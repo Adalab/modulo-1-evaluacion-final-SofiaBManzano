@@ -51,15 +51,29 @@ footer {
 
 .heart {
   color: red;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes bounce {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(10);
+  }
 }
 /* -------- TABLET ------- */
 
 @media all and (min-width: 768px) {
   .footer {
+    margin-left: 39px;
+    margin-right: 39px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
 
     &__copy {
       order: -5;
@@ -72,6 +86,22 @@ footer {
       &--1 {
         text-align: left;
       }
+    }
+  }
+}
+
+/* -------- DESKTOP ------- */
+@media (min-width: 1200px) {
+  .footer {
+    margin-left: 370px;
+    margin-right: 370px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    &__links--1 {
+      margin-right: 30px;
+      margin-left: 30px;
     }
   }
 }

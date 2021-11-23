@@ -8,6 +8,10 @@
   position: fixed;
   top: 0px;
   left: 0px;
+  transition: background-color ease 1s;
+  &:hover {
+    background-color: #139cf1;
+  }
   &__icon {
     width: 16px;
     height: 14px;
@@ -31,7 +35,7 @@
   &__title {
     font-family: var(--title-font-family);
     text-transform: uppercase;
-    word-spacing: 900px;
+    word-spacing: 3000px;
     text-align: center;
     font-size: 42px;
     color: var(--white-color);
@@ -42,6 +46,7 @@
     text-align: center;
     font-family: var(--primary-font-family);
     padding-bottom: 45px;
+    font-size: 16px;
   }
   &__down {
     width: 45px;
@@ -51,5 +56,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+/* -------- TABLET ------- */
+
+@media all and (min-width: 768px) {
+  .article {
+    &__title {
+      font-size: 80px;
+    }
+    &__content {
+      font-size: 24px;
+    }
+  }
+}
+/* -------- DESKTOP ------- */
+
+@media all and (min-width: 1200px) {
+  .article {
+    &__title {
+      font-size: 100px;
+    }
+    &__content {
+      font-size: 24px;
+    }
   }
 }

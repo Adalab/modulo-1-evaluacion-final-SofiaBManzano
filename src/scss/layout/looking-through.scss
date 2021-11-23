@@ -28,18 +28,43 @@
 .button__go {
   width: 76px;
   height: 45px;
+  justify-content: center;
   text-transform: capitalize;
   background-color: var(--white-color);
   text-decoration: none;
   border-radius: 22.5px;
   border: solid 2px var(--button-color);
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &--text {
+    padding: 20px;
+
     color: var(--button-color);
     font-size: 20px;
     font-family: var(--button-font-family);
   }
 }
+.button__go {
+  transform: scale(1);
+  transition: scale background-color ease-in 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: var(--button-color);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+  &--text {
+    transition: color ease-in 0.5s;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
 /* -------- TABLET ------- */
 
 @media all and (min-width: 768px) {
@@ -50,6 +75,27 @@
     margin-top: 30px;
     margin-bottom: 60px;
   }
+  .button__go {
+    width: 91px;
+    height: 45px;
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: var(--white-color);
+    text-decoration: none;
+    border-radius: 22.5px;
+    border: solid 2px var(--button-color);
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--text {
+      padding-left: 50px;
+      padding-right: 50px;
+      color: var(--button-color);
+      font-size: 20px;
+      font-family: var(--button-font-family);
+    }
+  }
 }
 /* -------- DESKTOP ------- */
 
@@ -58,5 +104,24 @@
     margin-right: 275px;
     margin-left: 275px;
     padding: 0px;
+  }
+  .button__go {
+    width: 160px;
+    height: 45px;
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: var(--white-color);
+    text-decoration: none;
+    border-radius: 22.5px;
+    border: solid 2px var(--button-color);
+    margin-top: 30px;
+    &--text {
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px;
+      color: var(--button-color);
+      font-size: 20px;
+      font-family: var(--button-font-family);
+    }
   }
 }
