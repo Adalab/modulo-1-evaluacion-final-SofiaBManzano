@@ -19,15 +19,13 @@ footer {
   justify-content: center;
   align-items: center;
   line-height: 30px;
-
+  text-align: center;
   &__links--1 {
-    text-align: center;
     font-size: 16px;
     text-transform: uppercase;
     padding-bottom: 30px;
   }
   &__links--2 {
-    text-align: center;
     font-size: 16px;
     text-transform: uppercase;
     padding-bottom: 30px;
@@ -35,6 +33,7 @@ footer {
   &__copy {
     font-family: var(--primary-font-family);
     color: var(--white-color);
+    font-size: 14px;
   }
   &__we-love-components {
     font-family: var(--primary-font-family);
@@ -52,4 +51,27 @@ footer {
 
 .heart {
   color: red;
+}
+/* -------- TABLET ------- */
+
+@media all and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__copy {
+      order: -5;
+      text-align: left;
+    }
+    &__links {
+      &--2 {
+        text-align: left;
+      }
+      &--1 {
+        text-align: left;
+      }
+    }
+  }
 }
