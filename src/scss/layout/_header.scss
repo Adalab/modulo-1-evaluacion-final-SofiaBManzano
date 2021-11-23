@@ -8,6 +8,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 999;
   transition: background-color ease 1s;
   &:hover {
     background-color: #139cf1;
@@ -40,6 +41,21 @@
     font-size: 42px;
     color: var(--white-color);
     padding-bottom: 10px;
+    animation-name: intro;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    @keyframes intro {
+      from {
+        opacity: 0;
+        letter-spacing: 10px;
+        // transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        letter-spacing: 0;
+        // transform: scale(1);
+      }
+    }
   }
   &__content {
     color: var(--white-color);
@@ -47,6 +63,16 @@
     font-family: var(--primary-font-family);
     padding-bottom: 45px;
     font-size: 16px;
+    animation-name: intro-2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    @keyframes intro-2 {
+      0%,
+      30% {
+        opacity: 0;
+        letter-spacing: 10px;
+      }
+    }
   }
   &__down {
     width: 45px;
@@ -56,6 +82,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    @keyframes bounce {
+      from {
+        transform: translateY(0%);
+      }
+      to {
+        transform: translateY(5%);
+      }
+    }
   }
 }
 /* -------- TABLET ------- */

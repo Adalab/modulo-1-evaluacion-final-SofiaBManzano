@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
 }
+
 footer {
   background-color: var(--footer-color);
 }
@@ -50,20 +51,35 @@ footer {
 }
 
 .heart {
+  display: inline-block;
+
   color: red;
-  animation-name: bounce;
-  animation-duration: 2s;
+  animation-name: beat;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-direction: alternate;
+  transform-origin: center;
 }
-@keyframes bounce {
+@keyframes beat {
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(10);
+    transform: scale(1.5);
   }
 }
+//   animation-name: beat;
+//   animation-duration: 1.5s;
+//   transition: ease-in-out infinite;
+// }
+// @keyframes beat {
+//   from {
+//     transform: scale(1);
+//   }
+//   to {
+//     transform: scale(3);
+//   }
+// }
 /* -------- TABLET ------- */
 
 @media all and (min-width: 768px) {
