@@ -1,5 +1,5 @@
 .menu {
-  background-color: var(--footer-color);
+  background-color: #0271bc;
   width: 44px;
   height: 44px;
   display: flex;
@@ -18,21 +18,39 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 568px;
+  height: 100vh;
   position: relative;
 }
-.article__title {
-  height: 568px;
+.article {
+  height: 100vh;
+  padding-bottom: 53px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  color: var(--white-color);
-  &--title {
+  &__title {
     font-family: var(--title-font-family);
     text-transform: uppercase;
+    word-spacing: 900px;
+    text-align: center;
+    font-size: 42px;
+    color: var(--white-color);
+    padding-bottom: 10px;
   }
-  &--content {
+  &__content {
+    color: var(--white-color);
+    text-align: center;
     font-family: var(--primary-font-family);
+    padding-bottom: 45px;
+  }
+  &__down {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+/* -------- TABLET ------- */

@@ -1,23 +1,25 @@
 .section2 {
   background-color: #eff9ff;
-  height: 624px;
-
+  // height: 624px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .titles {
   font-size: 24px;
+
+  padding-top: 30px;
   text-transform: capitalize;
   font-family: var(--title-font-family);
 }
 
 .reasons-to-purchase {
+  font-size: 18px;
   font-family: var(--title-font-family);
-  padding-bottom: 45px;
   padding-right: 70px;
   padding-left: 70px;
+  padding-top: 45px;
 }
 .text {
   font-size: 18px;
@@ -32,6 +34,55 @@
   text-decoration: none;
   border-radius: 22.5px;
   border: solid 2px var(--button-color);
-  margin-top: 30px;
   font-family: var(--primary-font-family);
+}
+.container-button {
+  padding-top: 45px;
+  padding-bottom: 60px;
+}
+
+/* -------- TABLET ------- */
+
+@media all and (min-width: 768px) {
+  .section2 {
+    height: 397px;
+    padding-left: 85px;
+    padding-right: 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33% 33% 33%;
+    align-items: center;
+  }
+  .reasons_title {
+    font-size: 24px;
+  }
+  .titles {
+    font-size: 20px;
+    grid-column: span 3;
+
+    padding: 0px;
+    justify-content: center;
+  }
+  .reasons-to-purchase {
+    font-size: 24px;
+    padding: 0px;
+    align-content: center;
+  }
+  .container-button {
+    grid-column: 2;
+  }
+}
+/* -------- DESKTOP ------- */
+
+@media all and (min-width: 1200px) {
+  .section2 {
+    height: 427px;
+  }
+  .reasons_title {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 20px;
+    width: 353px;
+  }
 }
