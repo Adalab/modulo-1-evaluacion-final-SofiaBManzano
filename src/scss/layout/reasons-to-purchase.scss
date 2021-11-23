@@ -6,7 +6,6 @@
   text-align: center;
   &__title {
     font-size: 24px;
-
     padding-top: 30px;
     text-transform: capitalize;
     font-family: var(--title-font-family);
@@ -31,6 +30,7 @@
   font-size: 20px;
   background-color: var(--button-color);
   text-decoration: none;
+
   border-radius: 22.5px;
   border: solid 2px var(--button-color);
   font-family: var(--primary-font-family);
@@ -40,6 +40,30 @@
   padding-bottom: 60px;
 }
 
+.reasons-button {
+  transform: scale(1);
+  transition: scale ease 1s, background-color ease-in 0.5s;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: #eff9ff;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+.reasons-nav-a {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: var(--primary-font-family);
+  color: var(--white-color);
+  transition: scale color ease-in 0.5s;
+  &:hover {
+    color: var(--button-color);
+  }
+}
 /* -------- TABLET ------- */
 
 @media all and (min-width: 768px) {
@@ -53,7 +77,7 @@
     align-items: center;
     &__title {
       font-family: var(--title-font-family);
-      font-size: 20px;
+      font-size: 26px;
       grid-column: span 3;
       padding: 0px;
       justify-content: center;

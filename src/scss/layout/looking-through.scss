@@ -48,7 +48,7 @@
 }
 .button__go {
   transform: scale(1);
-  transition: scale background-color ease-in 0.5s;
+  transition: scale ease-in 1s, background-color ease-in 0.5s;
 
   &:hover {
     transform: scale(1.1);
@@ -74,6 +74,11 @@
     margin-left: 39px;
     margin-top: 30px;
     margin-bottom: 60px;
+    &__title {
+      width: 690px;
+      height: 45px;
+      padding-bottom: 30px;
+    }
   }
   .button__go {
     width: 91px;
