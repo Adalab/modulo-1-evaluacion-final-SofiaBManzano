@@ -1,3 +1,12 @@
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("../images/cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
 .menu {
   background-color: #0271bc;
   width: 44px;
@@ -16,17 +25,13 @@
   &__icon {
     width: 16px;
     height: 14px;
+    transform: scale(1);
+    &:active {
+      transform: scale(0.8);
+    }
   }
 }
-.header-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-    url("../images/cover.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-}
+
 .article {
   height: 100vh;
   padding-bottom: 53px;
@@ -85,6 +90,10 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-name: bounce;
+    transition: background-color ease-in 0.2s;
+    &:hover {
+      background-color: var(--button-color);
+    }
     @keyframes bounce {
       from {
         transform: translateY(0%);
@@ -96,12 +105,6 @@
   }
 }
 
-.article__down {
-  transition: background-color ease-in 0.2s;
-  &:hover {
-    background-color: var(--button-color);
-  }
-}
 .icon {
   padding: 20px;
 
