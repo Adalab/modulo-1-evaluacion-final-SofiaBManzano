@@ -1,14 +1,27 @@
-.scroll__arrow {
-  width: 45px;
-  height: 45px;
-  left: 50%;
-  border-radius: 50%;
-  position: relative;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.scroll {
+  &__arrow {
+    width: 45px;
+    height: 45px;
+    left: 50%;
+    border-radius: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color ease-in 0.5s;
+    &:hover {
+      background-color: var(--button-color);
+    }
+  }
+  &__up {
+    padding: 20px;
+    transition: filter ease-in 0.2s;
+    &:hover {
+      filter: invert(0%) saturate(0%) brightness(200%) contrast(100%);
+    }
+  }
 }
 
 footer {
@@ -52,7 +65,6 @@ footer {
 
 .heart {
   display: inline-block;
-
   color: red;
   animation-name: beat;
   animation-duration: 1s;
@@ -65,21 +77,10 @@ footer {
     transform: scale(1);
   }
   to {
-    transform: scale(1.5);
+    transform: scale(1.8);
   }
 }
-//   animation-name: beat;
-//   animation-duration: 1.5s;
-//   transition: ease-in-out infinite;
-// }
-// @keyframes beat {
-//   from {
-//     transform: scale(1);
-//   }
-//   to {
-//     transform: scale(3);
-//   }
-// }
+
 /* -------- TABLET ------- */
 
 @media all and (min-width: 768px) {

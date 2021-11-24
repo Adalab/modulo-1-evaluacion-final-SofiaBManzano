@@ -48,6 +48,7 @@
 }
 .button__go {
   transform: scale(1);
+  transform-origin: center;
   transition: scale ease-in 1s, background-color ease-in 0.5s;
 
   &:hover {

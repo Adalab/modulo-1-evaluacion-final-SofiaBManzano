@@ -107,8 +107,7 @@
 
   transition: filter ease-in 0.2s;
   &:hover {
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(208deg)
-      brightness(300%) contrast(100%);
+    filter: invert(0%) saturate(0%) brightness(200%) contrast(100%);
   }
 }
 
