@@ -42,11 +42,11 @@
   &__title {
     font-family: var(--title-font-family);
     text-transform: uppercase;
-    word-spacing: 3000px;
+    word-spacing: 100vw;
     text-align: center;
     font-size: 42px;
     color: var(--white-color);
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
     animation-name: intro;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -65,16 +65,21 @@
     color: var(--white-color);
     text-align: center;
     font-family: var(--primary-font-family);
-    padding-bottom: 45px;
+    // padding-bottom: 45px;
     font-size: 16px;
+    letter-spacing: 0px;
     animation-name: intro-2;
     animation-duration: 3s;
     animation-iteration-count: 1;
     @keyframes intro-2 {
-      0%,
-      30% {
+      0% {
         opacity: 0;
         letter-spacing: 10px;
+      }
+
+      100% {
+        opacity: 1;
+        letter-spacing: 0px;
       }
     }
   }
