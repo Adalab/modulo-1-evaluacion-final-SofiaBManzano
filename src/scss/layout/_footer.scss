@@ -10,8 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color ease-in 0.5s;
+    transition: scale ease-in 1s, background-color ease-in 0.5s;
     &:hover {
+      // transform: scale(1.1);
       background-color: var(--button-color);
     }
   }
@@ -24,10 +25,10 @@
   }
 }
 
-footer {
+.footer {
   background-color: var(--footer-color);
 }
-.footer {
+.contain {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,14 +78,14 @@ footer {
     transform: scale(1);
   }
   to {
-    transform: scale(1.6);
+    transform: scale(1.8);
   }
 }
 
 /* -------- TABLET ------- */
 
 @media all and (min-width: 768px) {
-  .footer {
+  .contain {
     margin-left: 39px;
     margin-right: 39px;
     display: flex;
@@ -109,7 +110,7 @@ footer {
 
 /* -------- DESKTOP ------- */
 @media (min-width: 1200px) {
-  .footer {
+  .contain {
     margin-left: 370px;
     margin-right: 370px;
     display: flex;

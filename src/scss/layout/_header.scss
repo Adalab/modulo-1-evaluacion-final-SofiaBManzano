@@ -65,18 +65,27 @@
     color: var(--white-color);
     text-align: center;
     font-family: var(--primary-font-family);
+    height: 15px;
+    width: 100%;
+    // overflow: hidden;
+
     // padding-bottom: 45px;
     font-size: 16px;
     letter-spacing: 0px;
     animation-name: intro-2;
     animation-duration: 3s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
     @keyframes intro-2 {
       0% {
         opacity: 0;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
       }
-
+      50% {
+        opacity: 0.5;
+        letter-spacing: 2px;
+      }
       100% {
         opacity: 1;
         letter-spacing: 0px;
@@ -86,6 +95,8 @@
   &__down {
     width: 45px;
     height: 45px;
+    margin-bottom: 53px;
+    margin-top: 45px;
     border-radius: 50%;
     background-color: white;
     display: flex;
