@@ -19,7 +19,8 @@
   }
 }
 .header-image {
-  background-image: url("../images/cover.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("../images/cover.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,12 +49,10 @@
       from {
         opacity: 0;
         letter-spacing: 10px;
-        // transform: scale(0.9);
       }
       to {
         opacity: 1;
         letter-spacing: 0;
-        // transform: scale(1);
       }
     }
   }
@@ -91,11 +90,28 @@
         transform: translateY(0%);
       }
       to {
-        transform: translateY(5%);
+        transform: translateY(15%);
       }
     }
   }
 }
+
+.article__down {
+  transition: background-color ease-in 0.2s;
+  &:hover {
+    background-color: var(--button-color);
+  }
+}
+.icon {
+  padding: 20px;
+
+  transition: filter ease-in 0.2s;
+  &:hover {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(208deg)
+      brightness(300%) contrast(100%);
+  }
+}
+
 /* -------- TABLET ------- */
 
 @media all and (min-width: 768px) {
