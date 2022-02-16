@@ -8,7 +8,9 @@
   position: relative;
 }
 .menu {
-  background-color: #0271bc;
+  background-color: #fcaaf8;
+  border-radius: 50%;
+  margin: 10px;
   width: 44px;
   height: 44px;
   display: flex;
@@ -20,7 +22,7 @@
   z-index: 999;
   transition: background-color ease 1s;
   &:hover {
-    background-color: #139cf1;
+    background-color: #ce53ff;
   }
   &__icon {
     width: 16px;
