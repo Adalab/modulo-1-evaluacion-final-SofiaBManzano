@@ -48,7 +48,9 @@
     text-align: center;
     font-size: 42px;
     color: var(--white-color);
-    // padding-bottom: 10px;
+
+    border: white 3px solid;
+    width: 50vw;
     animation-name: intro;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -69,9 +71,7 @@
     font-family: var(--primary-font-family);
     height: 15px;
     width: 100%;
-    // overflow: hidden;
-
-    // padding-bottom: 45px;
+    margin-top: 20px;
     font-size: 16px;
     letter-spacing: 0px;
     animation-name: intro-2;
@@ -138,6 +138,8 @@
   .article {
     &__title {
       font-size: 80px;
+      border: white 3px solid;
+      width: 50vw;
     }
     &__content {
       font-size: 24px;
@@ -150,6 +152,8 @@
   .article {
     &__title {
       font-size: 100px;
+      border: white 3px solid;
+      width: 35vw;
     }
     &__content {
       font-size: 24px;

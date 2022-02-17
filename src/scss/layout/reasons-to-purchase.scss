@@ -5,33 +5,12 @@
   padding-right: 15px;
   text-align: center;
   &__title {
+    letter-spacing: 1px;
     font-size: 24px;
     padding-top: 30px;
     text-transform: capitalize;
     font-family: var(--title-font-family);
-  }
-  &__article {
-    &--1 {
-      transform: scale(1);
-      transition: transform ease 1s;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-    &--2 {
-      transform: scale(1);
-      transition: transform ease 1s;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-    &--3 {
-      transform: scale(1);
-      transition: transform ease 1s;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
+    color: #1f1f1f;
   }
 }
 
@@ -45,6 +24,7 @@
 .text {
   font-size: 18px;
   font-family: var(--primary-font-family);
+  color: #1f1f1f;
 }
 .reasons-button {
   width: 184px;
@@ -99,19 +79,47 @@
     align-items: center;
     &__title {
       font-family: var(--title-font-family);
+      color: #1f1f1f;
+      letter-spacing: 1px;
       font-size: 26px;
       grid-column: span 3;
       padding: 0px;
       justify-content: center;
     }
+    &__article {
+      &--1 {
+        transform: scale(1);
+        transition: transform ease 1s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &--2 {
+        transform: scale(1);
+        transition: transform ease 1s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &--3 {
+        transform: scale(1);
+        transition: transform ease 1s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 }
 .reasons_title {
   font-size: 24px;
+  color: #1f1f1f;
+  letter-spacing: 1px;
 }
 
 .reasons-to-purchase {
   font-size: 24px;
+
   padding: 30px;
   align-content: center;
 }
@@ -126,6 +134,29 @@
     height: 427px;
     &__title {
       font-size: 32px;
+    }
+    &__article {
+      &--1 {
+        transform: scale(1);
+        transition: transform ease 1s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &--2 {
+        transform: scale(1);
+        transition: transform ease 1s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &--3 {
+        transform: scale(1);
+        transition: transform ease 1s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
   }
 
